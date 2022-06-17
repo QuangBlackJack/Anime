@@ -1,0 +1,51 @@
+<form style="width: 800px; margin-left: 10px; margin-top: 10px; float: left" method="get"
+    action="/watch/update/{{Movie._id}}">
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">name</label>
+        <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email" value="{{Movie.name}}">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">code</label>
+        <input name="code" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email" value="{{Movie.code}}">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">image</label>
+        <input name="image" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email" value="{{Movie.image}}">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">movieid</label>
+        <input name="movieid" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email" value="{{Movie.movieid}}">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    {{!-- <div class="form-group">
+        <label for="exampleInputEmail1">slug</label>
+        <input name="slug" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div> --}}
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">title</label>
+        <input name="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email" value="{{Movie.title}}">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<img style="margin-left: 20px;" width="500px" height="700px"
+    src="http://pa1.narvii.com/6279/255d7aab2146709b507fad772140f68835d9ceb9_hq.gif" class="rounded float-right"
+    alt="...">
