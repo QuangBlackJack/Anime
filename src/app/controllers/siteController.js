@@ -5,7 +5,6 @@ class SiteController {
     //[get] (/) the fucking home page
 
     index(req, res, next) {
-
         Movie.find({})
             .then((Movie) => {
                 // res.json(Movie)
@@ -14,6 +13,10 @@ class SiteController {
                 });
             })
             .catch(next);
+    }
+
+    test(req, res, next) {
+        res.render('test/test')
     }
 }
 

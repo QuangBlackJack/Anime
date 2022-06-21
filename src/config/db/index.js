@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 async function connect() {
     try {
-        await mongoose.connect('mongodb://localhost:27017/hentai', {
+        await mongoose.connect('mongodb+srv://Quang:cisco@cluster0.9oles.mongodb.net/test', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });

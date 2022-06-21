@@ -1,0 +1,39 @@
+<div class="box">
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button onclick="login()" class="btn btn-primary">Submit</button>
+
+</div>
+
+<script>
+    function login(e) {
+        event.preventDefault();
+        var Email = document.getElementById("exampleInputEmail1").value;
+        var password = document.getElementById("exampleInputPassword1").value;
+
+        if (Email == null) {
+            alert("vui long nhap email va password")
+        } else if (Email == "Quangdeptraihentai@gmail.wibu" && password == "quangwibunumber1") {
+            var boxElement = document.querySelector('.box');
+            boxElement.innerHTML = `<h1>Hello Quang Dep Trai Wibu Hentai</h1>`;
+        } else {
+            var boxElement = document.querySelector('.box');
+            boxElement.innerHTML = `<h1>get the fuck out</h1>`;
+        }
+    }
+
+
+</script>

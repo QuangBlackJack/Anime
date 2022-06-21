@@ -42,7 +42,7 @@ class WatchController {
         Movie.updateOne({ _id: req.params._id }, req.query)
             .then(
                 (Movie) =>
-                    res.json(req.query),
+                    res.redirect('/'),
             )
             .catch(next);
     }
@@ -56,7 +56,6 @@ class WatchController {
             )
             .catch(next);
     }
-
 }
 
 module.exports = new WatchController();

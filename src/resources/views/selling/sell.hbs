@@ -1,0 +1,98 @@
+<div>
+    <br>
+    <div style="margin-left: 10px; width:fit-content" class="border border-dark bg-light rcorner">
+        <h2 style="margin-left: 10px; margin-right:10px">
+            <button class="border border-dark rcorner"
+                style="width: 150px; height:50px; margin-top:10px; background-color:rgb(238, 107, 151)">All</button>
+            <button class="border border-dark rcorner"
+                style="width: 150px; height:50px; margin-top:10px; background-color:rgb(238, 107, 151)">Anime</button>
+            <button class="border border-dark rcorner"
+                style="width: 150px; height:50px; margin-top:10px; background-color:rgb(238, 107, 151)">Cartoon</button>
+            <button class="border border-dark rcorner"
+                style="width: 150px; height:50px; margin-top:10px; background-color:rgb(238, 107, 151)">Game</button>
+            <button class="border border-dark rcorner"
+                style="width: 150px; height:50px; margin-top:10px; background-color:rgb(238, 107, 151)">Hololive</button>
+        </h2>
+    </div>
+    <br>
+    {{!-- left menu --}}
+    <div style="width: 200px; height: 490px; margin-left: 10px; float: left"
+        class="border border-dark bg-light rcorner">
+        <ul class="list-group">
+            <b>
+                <br>
+                <li class="list-group-item"><a style="text-decoration: none; color:rgb(238, 63, 121)"
+                        href="https://www.facebook.com/quang.benjamin.359/">Facebook</a> </li>
+                <li class="list-group-item"><a href="https://www.instagram.com/quangbenjamin.blvck/"
+                        style="text-decoration: none; color:rgb(238, 63, 121)">Instagram</a></li>
+                <li class="list-group-item"><a href="https://twitter.com/shark_benjamin"
+                        style="text-decoration: none; color:rgb(238, 63, 121)">Twitter</a></li>
+                <li class="list-group-item"><a href="https://www.youtube.com/channel/UCD4Kg5SwFthQUt9DKeKYo5A"
+                        style="text-decoration: none; color:rgb(238, 63, 121)">Youtube</a>
+                </li>
+                <li class="list-group-item" style="text-decoration: none; color:rgb(238, 63, 121)">0866114321</li>
+            </b>
+        </ul>
+
+        <img style="margin-top:10px; width: 198px; height: 250px " class="border border-dark rcorner"
+            src="https://media.giphy.com/media/r6mRhVtsNCgne/giphy.gif" alt="">
+
+
+    </div>
+
+    {{!-- mainboard --}}
+    <div style="width: 900px; min-height: 260px; margin-left: 10px; float: left"
+        class="border border-dark bg-light rcorner">
+
+        {{!-- product --}}
+        {{#each Product}}
+        <div style="margin-top: 20px; float:left; margin-bottom: 20px" class="col-sm-6 col-lg-4">
+            <div class="card">
+                <img width="200" height="300" class="card-img-top" src="{{this.image}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <p class="card-text">{{this.price}}</p>
+                    <a href="sell/detail/{{this._id}}" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+
+    </div>
+
+</div>
+
+
+<div>
+    <br>
+
+
+
+    {{!-- <div style="float: right; margin-top: 20px; margin-right: 10px" class="rounded bg-dark">
+        <img width="400px" src="https://emoji.gg/assets/emoji/1409-zerotwo-dance.gif" class="rounded float-right"
+            alt="...">
+    </div> --}}
+
+    <div style="width: 57rem; margin-left: 10px" class="mt-4">
+        <div class="row">
+
+            {{!-- {{#each Movie}}
+            <div style="margin-top: 10px;" class="col-sm-6 col-lg-4">
+                <div class="card">
+                    <img width="200" height="300" class="card-img-top" src="{{this.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{this.name}}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="watch/{{this.slug}}" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}} --}}
+
+        </div>
+    </div>
+
+</div>

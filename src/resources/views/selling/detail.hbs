@@ -1,0 +1,52 @@
+<form method="get" action="/cart/add/{{_id}}">
+    <div style="width: 900px; height:500px; margin-top:40px; margin-left:20px; background-color: #e268a583;"
+        class="border border-dark rcorner">
+
+        <div style="width: 350px; height:480px; margin-top:10px; margin-left:10px; float:left">
+            {{!-- main img --}}
+            <div style="width: 320px; height:300px; margin-top:10px; margin-left:10px; float:left"> <img name="image"
+                    style="width: 320px; height:300px;" class="border border-dark bg-light rcorner"
+                    src="{{Product.image}}" alt=""> </div>
+            {{!-- options --}}
+            <div>
+                {{!-- img 1 --}}
+                <div style="width: 100px; height:100px; margin-top:30px; margin-left:10px; float:left"> <img
+                        style="width: 100px; height:100px;" class="border border-dark bg-light rcorner"
+                        src="{{Product.image}}" alt=""> </div>
+                {{!-- img 2 --}}
+                <div style="width: 100px; height:100px; margin-top:30px; margin-left:10px; float:left"> <img
+                        style="width: 100px; height:100px;" class="border border-dark bg-light rcorner"
+                        src="{{Product.imagee}}" alt=""> </div>
+                {{!-- img 3 --}}
+                <div style="width: 100px; height:100px; margin-top:30px; margin-left:10px; float:left"> <img
+                        style="width: 100px; height:100px;" class="border border-dark bg-light rcorner"
+                        src="{{Product.imageee}}" alt=""> </div>
+            </div>
+        </div>
+        <div style="width: 520px; height:480px; margin-top:10px; margin-left:10px; float:left">
+            {{!-- product name --}}
+            <div style="width: 500px; height:130px; margin-top:10px; margin-left:10px; float:left">
+                <h1 name="name">{{Product.name}}</h1>
+            </div>
+            {{!-- product price --}}
+            <div style="width: 500px; height:130px; margin-top:10px; margin-left:10px; float:left">
+                <h3 name="price">{{Product.price}}</h3>
+            </div>
+            {{!-- add to cart button --}}
+            <div style="width: 500px; height:130px; margin-top:10px; margin-left:10px; float:left; font-size: 30px;">
+                <button class="border border-dark rcorner" style=" background-color: #f25a9c;">add to
+                    cart</button>
+            </div>
+        </div>
+
+    </div>
+    <div style="width: 670px; height:70px; margin-top:40px; margin-left:20px; background-color: #e268a583;"
+        class="border border-dark rcorner">
+        <input name="name" style="margin-top: 20px; margin-left:20px; color:white; background-color:white" type="text"
+            value="{{Product.name}}">
+        <input name="image" style="margin-top: 20px; margin-left:20px; color:white; background-color:white" type="text"
+            value="{{Product.image}}">
+        <input name="price" style="margin-top: 20px; margin-left:20px; color:white; background-color:white" type="text"
+            value="{{Product.price}}">
+    </div>
+</form>

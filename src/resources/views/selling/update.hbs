@@ -1,0 +1,47 @@
+<form style="width: 800px; margin-left: 10px; margin-top: 10px; float: left" method="get"
+    action="/sell/change/{{Product._id}}">
+
+    <b>
+        <div class="form-group">
+            <label for="exampleInputEmail1">name</label>
+            <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email" value="{{Product.name}}">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">price</label>
+            <input name="price" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email" value="{{Product.price}}">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">image 1</label>
+            <input name="image" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email" value="{{Product.image}}">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">image 2</label>
+            <input name="imagee" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email" value="{{Product.imagee}}">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">image 3</label>
+            <input name="imageee" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email" value="{{Product.imageee}}">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">type</label>
+            <input name="type" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email" value="{{Product.type}}">
+        </div>
+    </b>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<img style="margin-left: 20px;" width="500px" height="700px"
+    src="http://pa1.narvii.com/6279/255d7aab2146709b507fad772140f68835d9ceb9_hq.gif" class="rounded float-right"
+    alt="...">

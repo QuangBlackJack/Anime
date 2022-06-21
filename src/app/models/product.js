@@ -4,15 +4,16 @@ const slug = require('mongoose-slug-generator');
 
 mongoose.plugin(slug);
 
-const Movie = new Schema({
+const Product = new Schema({
     name: { type: String, maxlength: 255, default: 'Quang hacker dep trai' },
-    relationship: { type: String, maxlength: 255, default: 'Quang hacker dep trai' },
     image: { type: String, maxlength: 255, default: 'Quang hacker dep trai' },
-    movieid: { type: String, maxlength: 255, default: 'Quang hacker dep trai' },
+    imagee: { type: String, maxlength: 255, default: 'Quang hacker dep trai' },
+    imageee: { type: String, maxlength: 255, default: 'Quang hacker dep trai' },
+    price: { type: String, maxlength: 255, default: 'Quang hacker dep trai' },
     slug: { type: String, maxlength: 255, slug: 'name', unique: true },
-    title: { type: String, maxlength: 255, default: 'Quang hacker dep trai' },
+    type: { type: String, maxlength: 255, default: 'Quang hacker dep trai' },
 }, {
     timestamps: true,
 });
 
-module.exports = mongoose.model('Movie', Movie);
+module.exports = mongoose.model('Product', Product);

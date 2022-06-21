@@ -1,4 +1,5 @@
 const Movie = require('../models/Movie');
+const Product = require('../models/Product');
 const { multipleMongooseToObject } = require('../../util/mongoose');
 
 class meController {
@@ -15,6 +16,19 @@ class meController {
             })
             .catch(next);
     }
+
+    storeProduct(req, res, next) {
+        Product.find({})
+            .then((Product) => {
+                // res.json(Product)
+                res.render('me/productStorage', {
+                    Product: multipleMongooseToObject(Product),
+                });
+            })
+            .catch(next);
+    }
+
+
 }
 
 module.exports = new meController();
